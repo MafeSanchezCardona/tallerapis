@@ -7,7 +7,7 @@ import { BASE_URL, API_KEY } from './utils/api.js'
 
 function App() {
 
-  const [country, setCountry] = useState([]);
+  const [country, setCountry] = useState("Colombia");
   const [name, setName] = useState("");
   const [universities, setUniversities] = useState([]);
 

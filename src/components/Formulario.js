@@ -1,6 +1,5 @@
 import React from "react";
 import { Button, Card, Col, Form, InputGroup, Row } from 'react-bootstrap'
-import useSelect from "../hooks/useSelect"
 
 const Formulario = ({ setCountry, setName, handlerSearch }) => {
 
@@ -13,15 +12,8 @@ const Formulario = ({ setCountry, setName, handlerSearch }) => {
         { value: "France", label: "Francia" }
     ];
 
-    const [country, SelectCountry] = useSelect(
-        "Colombia",
-        opciones,
-        "Seleccione un País"
-    );
-
     const handlerSubmit = (e) => {
         e.preventDefault();
-        console.log(country);
         handlerSearch();
     }
 
